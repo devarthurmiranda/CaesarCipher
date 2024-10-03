@@ -112,15 +112,15 @@ def decrypt(text, shift):
 st1 = time.time()
 text = "This is some confidential Roman empire information writen by Julius Caesar! Fighting! Nulla quis leo blandit, maximus libero sed, imperdiet felis. Maecenas non euismod elit, et mattis lorem. Sed consequat, nibh id dapibus porta, dolor velit scelerisque eros, eu tincidunt felis sem sed erat. Fusce eget ante libero. Suspendisse viverra erat sit amet metus pharetra, vitae cursus tellus porttitor. Curabitur vitae hendrerit est, ac fringilla odio. Duis mollis fringilla enim. Fusce consectetur scelerisque ex, et eleifend libero fringilla id. In magna tortor, sagittis vel commodo gravida, tempor id libero. Cras id condimentum dui."
 encrypted_text = encrypt_modular(text, 3)
-print(f"Encrypted text: {encrypted_text}")
-print(f"Decrypted text {decrypt_modular(encrypted_text, 3)}")
+print(f"\n\nEncrypted text: {encrypted_text}")
+print(f"\nDecrypted text {decrypt_modular(encrypted_text, 3)}")
 et1 = time.time()
 print(f"Elapsed time (modular): {et1 - st1}")
 
 st2 = time.time()
 text = "This is some confidential Roman empire information writen by Julius Caesar! Fighting! Nulla quis leo blandit, maximus libero sed, imperdiet felis. Maecenas non euismod elit, et mattis lorem. Sed consequat, nibh id dapibus porta, dolor velit scelerisque eros, eu tincidunt felis sem sed erat. Fusce eget ante libero. Suspendisse viverra erat sit amet metus pharetra, vitae cursus tellus porttitor. Curabitur vitae hendrerit est, ac fringilla odio. Duis mollis fringilla enim. Fusce consectetur scelerisque ex, et eleifend libero fringilla id. In magna tortor, sagittis vel commodo gravida, tempor id libero. Cras id condimentum dui."
 encrypted_text = encrypt(text, 3)
-print(f"Encrypted text: {encrypted_text}")
-print(f"Decrypted text {decrypt(encrypted_text, 3)}")
+print(f"\n\nEncrypted text: {encrypted_text}")
+print(f"\nDecrypted text {decrypt(encrypted_text, 3)}")
 et2 = time.time()
 print(f"Elapsed time (not modular): {et2 - st2}")
