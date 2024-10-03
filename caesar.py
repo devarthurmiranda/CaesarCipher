@@ -40,7 +40,7 @@ def decrypt(text, shift):
     return result
 
 # Test
-text = "Hello, World!"
+text = "This is some confidential Roman empire information writen by Julius Caesar! Fighting!"
 encrypted_text = encrypt(text, 3)
 print(f"Encrypted text: {encrypted_text}")
 print(f"Decrypted text {decrypt(encrypted_text, 3)}")
